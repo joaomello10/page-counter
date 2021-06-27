@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Page Counter</title>
+</head>
+
+<body>
+    <header>
+        <h1>Page Counter</h1>
+        <img src="img/import_contacts_white_24dp.svg" class="svg">
+    </header>
+    <div class="new-book-container">
+        <button class="new-book-button" onclick="modalFunction(true)">
+            <img src="img/add_circle_white_24dp.svg" alt="">
+            New book
+        </button>
+    </div>
+    <div class="books-container">
+        <ul class="books"></ul>
+    </div>
+    <div class="modal-container">
+        <div class="modal">
+            <p class="close-modal" onclick="modalFunction(false)"><i class="fas fa-times"></i></p>
+            <h2>Add new book</h2>
+            <form>
+                <input type="text" placeholder="Book's title" class="book-title">
+                <input type="number" placeholder="Number of pages" class="number-of-pages">
+                <button class="add-book">Add</button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

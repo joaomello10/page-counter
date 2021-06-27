@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: rgb(36, 116, 219);
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+header img {
+  width: 3rem;
+  margin-left: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.new-book-container {
+  margin: 20px;
+}
+
+.new-book-container button {
+  padding: 20px;
+  border: none;
+  outline: none;
+  background-color: rgb(47, 185, 12);
+  color: white;
+  border-radius: 5px;
+  font-weight: 300;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.new-book-container button img {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.new-book-container button:hover {
+  background-color: rgb(43, 163, 13);
+  transform: scale(0.9);
+}
+
+.books-container {
+  display: flex;
+}
+
+.books {
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 20px 30px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+  transition: 0.3s;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.buttons p {
+  margin: 0 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.buttons {
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  width: 40px;
+  height: 40px;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  opacity: 0.5;
+}
+
+.minus {
+  background-color: rgb(241, 40, 13);
+}
+
+.plus {
+  background-color: rgb(47, 185, 12);
+}
+
+.remove {
+  margin-left: 40px;
+  background-color: rgb(241, 40, 13);
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.active {
+  display: flex;
+}
+
+.modal {
+  background-color: rgb(36, 116, 219);
+  padding: 20px 40px 40px 40px;
+  width: 500px;
+}
+
+.modal h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.modal input {
+  display: block;
+  width: 100%;
+  margin: 40px 0px;
+  height: 60px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.modal button {
+  width: 100%;
+  height: 60px;
+  font-size: 1.6rem;
+  background-color: rgb(47, 185, 12);
+  color: white;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+.modal button:hover {
+  background-color: rgb(43, 163, 13);
+}
+
+.modal p {
+  font-size: 2.5rem;
+  color: rgb(241, 40, 13);
+  transition: 0.3s;
+}
+
+.modal p:hover {
+  color: rgb(197, 34, 13);
+}
+
+.remove-book {
+  animation: remove-book 0.4s ease forwards;
+}
+
+@keyframes remove-book {
+  to {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
